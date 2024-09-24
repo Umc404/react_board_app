@@ -40,7 +40,7 @@ table>thead>tr>td:nth-child(5) {
 }
 table>tbody td{
     padding: 10px;
-    border-bottom: 1px solid #96b9ee;
+    /* border-bottom: 1px solid #96b9ee; */
 }
 table>tbody td>a {
     text-decoration: none;
@@ -70,6 +70,9 @@ table>tbody td>a {
 .tableArea {
     height: 500px;
     margin-top: 50px;
+}
+.tableArea>table td {
+    border-bottom: 1px solid #416db1;
 }
 .tableArea>table>thead {
     height: 40px;
@@ -108,6 +111,9 @@ button:active {
     height: 700px;
     margin: 0 auto;
 }
+.boardDetail>.table td{
+    border-bottom: 1px solid #416db1;
+}
 .boardDetail>.links {
     float: right;
 }
@@ -117,7 +123,7 @@ button:active {
     margin-left: 20px;
 }
 .table td, .table th {
-    border-bottom: 1px lightgray solid; 
+    /* border-bottom: 1px lightgray solid;  */
     height: 30px;
     font-size: 14px;
 }
@@ -154,31 +160,61 @@ button:active {
 
 /* boardSubmit */
 .submitArea {
-    height: 60px;
+    height: 450px;
     margin: 0 auto;
     width: 500px;
 }
 .submitArea>a>button {
     margin: 9px;
 }
-.submitArea>input {
+.submitArea>textarea {
     width: 480px;
-    height:30px;
+    height: 30px;
+    font-size: 16px;
     margin-bottom: 20px;
+    border: 2px solid #4e8ae4;
+    resize: none;
 }
 .submitArea>.contents{ 
     height: 200px;
 
 }
-.boardUpdate>.table>thead>tr>td>input {
-    width: 400px;
+/* boardUpdate */
+.boardUpdate {
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+}
+.boardUpdate>.table{
+    margin-bottom: 0px;
+}
+.boardUpdate>.table>thead>tr>td>textarea {
+    width: 550px;
     height: 40px;
     font-size: 20px;
-    border: 2px solid #4e8ae4
+    border: 2px solid #4e8ae4;
+    resize: none;
 }
-.boardUpdate>.table>tbody>tr>td>input {
+.boardUpdate>.table>tbody>tr>td>textarea {
     width: 550px;
     height: 300px;
-    font-size: 20px;
+    font-size: 18px;
     border: 2px solid #4e8ae4;
+    resize: none;
+}
+.boardUpdate>.table td>span{
+    margin-right: 60px;
+}
+.boardUpdate>.table td>span>textarea{
+    width: 550px;
+    border: 2px solid #4e8ae4;
+    resize: none;
+    font-size: 20px;
+}
+.boardUpdate>.links{
+    float: right;
+    margin-right: 70px;
+}
+.boardUpdate>.links button{
+    margin-left: 20px;
 }

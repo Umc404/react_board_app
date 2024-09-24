@@ -52,28 +52,32 @@ const BoardUpdate = () => {
                     <thead>
                         <tr>
                             <td>
-                            <input type="text" placeholder='제목' name='title' className='title'
+                            <textarea type="text" placeholder='제목' name='title' className='title'
                             onChange={onChange} value={detail.title}/>
+                            </td>
+                        </tr>
+                            <td>
                                 <span>
-                                    <input type="text" placeholder='작성자' name='title' className='title'
+                                    <textarea type="text" placeholder='작성자' name='title' className='title'
                                     onChange={onChange} value={detail.writer}/>
                                 </span>
                             </td>
-                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                            <input type="text" placeholder='내용을 입력하세요' name='contents' className='contents'
+                            <textarea type="text" placeholder='내용을 입력하세요' name='contents' className='contents'
                                 onChange={onChange} value={detail.contents}/>
                             </td>
                         </tr>
                     </tbody>
-                </table>            
-                        <button onClick={onUpdate}>수정</button>
+                </table>
+                <div className='links'>
+                    <button onClick={onUpdate}>수정</button>
                     <Link to={"/"}>
                         <button>목록</button>
                     </Link>
+                </div>            
                     
             </div>
         );

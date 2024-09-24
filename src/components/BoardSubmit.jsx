@@ -62,7 +62,7 @@ const BoardSubmit = () => {
         <div className='boardSubmit'>
             <div className='submitArea'>
                 <h3>게시글 등록</h3>
-                <input
+                <textarea
                     type="text"
                     placeholder='제목'
                     name='title'
@@ -70,7 +70,7 @@ const BoardSubmit = () => {
                     onChange={onChange}
                     value={title}
                 /><br />
-                <input
+                <textarea
                     type="text"
                     placeholder='작성자'
                     name='writer'
@@ -78,9 +78,9 @@ const BoardSubmit = () => {
                     onChange={onChange}
                     value={writer}
                 /><br />
-                <input
+                <textarea
                     type="text"
-                    placeholder='내용을 입력하세요'
+                    placeholder='내용을 입력하세요.'
                     name='contents'
                     className='contents'
                     onChange={onChange}

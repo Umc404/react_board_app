@@ -66,7 +66,7 @@ app.get('/detail/:id',(req, res)=> {
     const id = req.params.id;
     console.log('param_id : '+id);
     // console.log('/detail');
-    const sql = `select title, contents, writer, date_format(reg_date,'%Y-%m-%d') as reg_date from board where id=${id}`
+    const sql = `select title, contents, writer, date_format(reg_date,'%Y-%m-%d') as reg_date, conCnt from board where id=${id}`
     db.query(sql, (err, data)=>{
         if(!err) {
             res.send(data);

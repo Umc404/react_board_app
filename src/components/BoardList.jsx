@@ -185,7 +185,7 @@ const BoardList = () => {
                                 onChange={onChange}
                             />
                             {/* <Link to={`/search/${searchText.index}/${searchText.search}`}> */}
-                                <button onClick={onSearch}>search</button>
+                                <button onClick={onSearch}>검색</button>
                             {/* </Link> */}
                             </div>
                     {/*  */}
@@ -196,6 +196,7 @@ const BoardList = () => {
                                     <td>제목</td>
                                     <td>작성자</td>
                                     <td>작성일자</td>
+                                    <td>조회수</td>
                                 </tr>
                             </thead>
                         </table>

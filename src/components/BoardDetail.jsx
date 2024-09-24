@@ -21,7 +21,7 @@ const BoardDetail = () => {
             const brDetail = await axios(`/detail/${id}`);
             // console.log(brDetail);
             setDetail(brDetail.data[0]);
-            // console.log(brDetail.data[0]);
+            console.log(brDetail.data[0]);
         }catch{
             console.log('error');
         }
@@ -47,7 +47,13 @@ const BoardDetail = () => {
                         <td>
                             <h3>{detail.title}</h3>
                             <span>
-                                {detail.writer}&nbsp;&nbsp;{detail.reg_date}
+                                조회수 : {detail.conCnt}
+                            </span>
+                            <span>
+                                {detail.reg_date}
+                            </span>
+                            <span>
+                                작성자 : {detail.writer}
                             </span>
                         </td>
                     </tr>
@@ -60,13 +66,15 @@ const BoardDetail = () => {
                     </tr>
                 </tbody>
             </table>
-            <Link to={"/"}>
-                <button>목록</button>
-            </Link>
-            <Link to={`/update/${id}`}>
-                <button>게시글 수정</button>
-            </Link>
-            <button onClick={onDelete}>삭제</button>
+            <div className='links'>
+                <Link to={"/"}>
+                    <button>목록</button>
+                </Link>
+                <Link to={`/update/${id}`}>
+                    <button>게시글 수정</button>
+                </Link>
+                <button onClick={onDelete}>삭제</button>
+            </div>
         </div>
     );
 };

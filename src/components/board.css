@@ -47,25 +47,28 @@ table>tbody td>a {
     color: black;
 }
 .search {
-    width: 340px;
+    width: 350px;
     height: 50px;
     float: right;
-    margin-right: 50px;
+    margin-right: 49px;
     line-height: 25px;
 }
 .search>select{
     height:38px;
-    margin-right: 8px;
+    margin-right: 10px;
     font-size: 15px;
 }
 .search>input{
     height:32px;
     font-size: 15px;
+    margin-right: 10px;
 }
 .search>button {
-    margin-right: 0px;
+    width: 60px;
+    height: 39px;
 }
 .tableArea {
+    height: 500px;
     margin-top: 50px;
 }
 .tableArea>table>thead {
@@ -82,22 +85,15 @@ table>tbody td>a {
     white-space: pre-line;
     /* overflow: scroll; */
 }
-.tableArea>tfoot tr td{
-    text-align: right;
-    border-bottom: none;
-    padding: 10px 0px 10px 0px;
-}
-.tableArea>tfoot tr td>a{
-    text-decoration: none;
-    padding: 15px;
-}
-.tableArea>tfoot tr td>button{
-    margin: 5px;
+.tableArea>a>button {
+    float: right;
+    margin-right:50px;
 }
 button {
-    float: right;
+    font-size: 15px;
+    height: 40px;
     padding: 10px;
-    margin-right: 50px;
+    /* margin-right: 20px; */
     border: none;
     background-color: #4e8ae4;
     font-weight: 700;
@@ -111,6 +107,14 @@ button:active {
     width:700px;
     height: 700px;
     margin: 0 auto;
+}
+.boardDetail>.links {
+    float: right;
+}
+.boardDetail>.links button {
+    height: 40px;
+    font-size: 15px;
+    margin-left: 20px;
 }
 .table td, .table th {
     border-bottom: 1px lightgray solid; 
@@ -137,6 +141,7 @@ button:active {
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
+    color: rgb(114, 114, 114);
 }
 .table>thead h3{
     margin: 0;
@@ -146,37 +151,7 @@ button:active {
     font-size: 20px;
     text-align: left;
 }
-.table>tfoot button{
-    width: 70px;
-    height: 30px;
-    font-size: 15px;
-    border: 0;
-    /* outline: 1.5px #FFA100 solid; */
-    border-radius: 5px;
-    padding-left: 10px;
-    background-color: #FFC766;
-}
-.table>tfoot button:active {
-    width: 70px;
-    height: 30px;
-    font-size: 15px;
-    border: 0;
-    border-radius: 5px;
-    /* outline: 1.5px #FFA100 solid; */
-    background-color: #ffa200a9;
-}
-.table>tfoot tr td{
-    text-align: right;
-    border-bottom: none;
-    padding: 10px 0px 10px 0px;
-}
-.table>tfoot tr td>a{
-    text-decoration: none;
-    padding: 15px;
-}
-.table>tfoot tr td>button{
-    margin: 5px;
-}
+
 /* boardSubmit */
 .submitArea {
     height: 60px;

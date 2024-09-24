@@ -1,0 +1,209 @@
+/* boardList */
+.boardList {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+.boardList>a{
+    text-decoration: none;
+    color: black;
+}
+table {
+    margin: auto;
+    width: 700px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    border-top: none;
+    /* margin-top: 30px; */
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+table>thead>tr h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1a3763;
+}
+table>thead>tr>td:nth-child(1) {
+    width: 43px;
+}
+table>thead>tr>td:nth-child(2) {
+    width: 400px;
+}
+table>thead>tr>td:nth-child(3) {
+    width: 100px;
+}
+table>thead>tr>td:nth-child(4) {
+    width: 140px;
+}
+table>thead>tr>td:nth-child(5) {
+    width: 80px;
+}
+table>tbody td{
+    padding: 10px;
+    border-bottom: 1px solid #96b9ee;
+}
+table>tbody td>a {
+    text-decoration: none;
+    color: black;
+}
+.search {
+    width: 340px;
+    height: 50px;
+    float: right;
+    margin-right: 50px;
+    line-height: 25px;
+}
+.search>select{
+    height:38px;
+    margin-right: 8px;
+    font-size: 15px;
+}
+.search>input{
+    height:32px;
+    font-size: 15px;
+}
+.search>button {
+    margin-right: 0px;
+}
+.tableArea {
+    margin-top: 50px;
+}
+.tableArea>table>thead {
+    height: 40px;
+    background-color: #1a3763;
+    color: white;
+    font-weight: 500;
+}
+.tableArea td>p{
+    height : 400px;
+    padding : 30px;
+    font-size: 16px;
+    line-height: 30px;
+    white-space: pre-line;
+    /* overflow: scroll; */
+}
+.tableArea>tfoot tr td{
+    text-align: right;
+    border-bottom: none;
+    padding: 10px 0px 10px 0px;
+}
+.tableArea>tfoot tr td>a{
+    text-decoration: none;
+    padding: 15px;
+}
+.tableArea>tfoot tr td>button{
+    margin: 5px;
+}
+button {
+    float: right;
+    padding: 10px;
+    margin-right: 50px;
+    border: none;
+    background-color: #4e8ae4;
+    font-weight: 700;
+    color: white;
+}
+button:active {
+    background-color: #2a4977;
+}
+/* boardDetail */
+.boardDetail {
+    width:700px;
+    height: 700px;
+    margin: 0 auto;
+}
+.table td, .table th {
+    border-bottom: 1px lightgray solid; 
+    height: 30px;
+    font-size: 14px;
+}
+.table td>p{
+    height : 400px;
+    padding : 30px;
+    font-size: 16px;
+    line-height: 30px;
+    white-space: pre-line;
+    /* overflow: scroll; */
+}
+.table td>h3{
+    /* border-bottom: 1px lightgray solid;  */
+    /* text-align: center; */
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 600;
+}
+.table td>span {
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.table>thead h3{
+    margin: 0;
+}
+.table>tbody h3{
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+}
+.table>tfoot button{
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    border: 0;
+    /* outline: 1.5px #FFA100 solid; */
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #FFC766;
+}
+.table>tfoot button:active {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    /* outline: 1.5px #FFA100 solid; */
+    background-color: #ffa200a9;
+}
+.table>tfoot tr td{
+    text-align: right;
+    border-bottom: none;
+    padding: 10px 0px 10px 0px;
+}
+.table>tfoot tr td>a{
+    text-decoration: none;
+    padding: 15px;
+}
+.table>tfoot tr td>button{
+    margin: 5px;
+}
+/* boardSubmit */
+.submitArea {
+    height: 60px;
+    margin: 0 auto;
+    width: 500px;
+}
+.submitArea>a>button {
+    margin: 9px;
+}
+.submitArea>input {
+    width: 480px;
+    height:30px;
+    margin-bottom: 20px;
+}
+.submitArea>.contents{ 
+    height: 200px;
+
+}
+.boardUpdate>.table>thead>tr>td>input {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #4e8ae4
+}
+.boardUpdate>.table>tbody>tr>td>input {
+    width: 550px;
+    height: 300px;
+    font-size: 20px;
+    border: 2px solid #4e8ae4;
+}
